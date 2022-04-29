@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <a href="https://www.flaticon.com/free-icons/bull" title="bull icons"></a>
+    <title>Games</title>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="img/hannya.png" alt="" >
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-expand="false" aria-label="Toogle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#beginning">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#startModal" >Sign in</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">About us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@fat">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- END NAVBAR -->
+
+    <!-- MODAL LOGIN -->
+    <div class="modal" id="startModal">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark text-light">
+                <div class="modal-header">
+                    <h5 class="modal-tittle">Login</h5>
+                    <button class="btn btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="form-login" method="post" >
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END MODAL LOGIN -->
+
+    <!-- MODAL CONTACT -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content bg-dark text-light">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="recipient-name" class="col-form-label">Recipient:</label>
+                  <input type="text" class="form-control" id="recipient-name">
+                </div>
+                <div class="mb-3">
+                  <label for="message-text" class="col-form-label">Message:</label>
+                  <textarea class="form-control" id="message-text"></textarea>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Send message</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- END MODAL CONTACT -->
+
+    <!-- MODAL ABOUT US -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content bg-dark text-light">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">INFORMATION</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, amet tempora ut quia excepturi laudantium beatae expedita, voluptates inventore, eaque voluptas sequi eius quam odio pariatur? Aliquam reiciendis illum mollitia minus ipsam sunt molestiae rem voluptas expedita amet, ex enim consequatur!</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-success">Understood</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- END MODAL ABOUT US -->
+    
+    <!-- CAROUSEL -->
+    <a name="beginning"></a>
+    <div class="carousel pt-5" id="mainSldier" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/valorant.jpg" alt="" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="img/sekiro.jpg" alt="" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="img/metro.jpg" alt="" class="d-block w-100">
+            </div>
+        </div>
+    </div>
+    <!-- END CAROUSEL -->
+
+    <!-- RIBBON -->
+    <div id="ribbon" class="content-fluid">
+        <div id="boxContent" class="container w-50 pl-5 rounded">
+            <div class="row align-items-center">
+                <div class="col-sm p-3">
+                    <img src="img/bull.png" class="mx-auto d-block" alt="">
+                </div>
+                <div class="col-sm p-3 text-light text-center">
+                    <p>Lorem ipsum dolor sit.</p>
+                    <h4 class="text-x">Dark</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END RIBBON -->
+    <div id="separator-ribbon">
+        <div class="content bg-secondary"></div>
+    </div>
+
+     <!-- CARDS -->
+     <div id="games">
+        <div class="container-md p-2" id="">
+            <div class="row pt-5">
+                <h3 class="text-center pb-5 pt-5 h1 text-light">¡All Games!</h3>
+            </div>
+            <div class="row"  id="row-container">
+                
+                
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="card w-100 card-border mb-5">
+                        <img src="img/card05.jpg" class="card-img-top" alt="...">
+                        <div class="card-body bg-secondary">
+                          <h5 class="card-title text-light">Card title</h5>
+                          <p class="card-text text-light">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-sm">
+                    <div class="card w-100 card-border mb-5">
+                        <img src="img/card05.jpg" class="card-img-top" alt="...">
+                        <div class="card-body bg-secondary">
+                          <h5 class="card-title text-light">Card title</h5>
+                          <p class="card-text text-light">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-sm">
+                    <div class="card w-100 card-border mb-5">
+                        <img src="img/card05.jpg" class="card-img-top" alt="...">
+                        <div class="card-body bg-secondary">
+                          <h5 class="card-title text-light">Card title</h5>
+                          <p class="card-text text-light">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-sm">
+                    <div class="card w-100 card-border mb-5">
+                        <img src="img/card05.jpg" class="card-img-top" alt="...">
+                        <div class="card-body bg-secondary">
+                          <h5 class="card-title text-light">Card title</h5>
+                          <p class="card-text text-light">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+    <!-- END CARDS -->
+
+    <!-- FOOTER -->
+    <div id="ribbon" class="p-5 text-light">
+        <div class="container w-50 pt-3">
+            <div class="row">
+                <div class="col text-center">
+                    <div class="row text-center">
+                        <p>© All rights reserved 2022</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END FOOTER -->
+
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+<script src="js/main.js"></script>
+<script src="js/login.js">win</script>
+
+</html>
