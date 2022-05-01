@@ -2,7 +2,7 @@
 let games= [];
 const container = document.getElementById('row-container');
 const request = async () => {
-    const response = await fetch('http://localhost/project_herramientas/games');
+    const response = await fetch('http://projectherramientas.herokuapp.com/project_herramientas/games');
 
     const data  = await response.json();
     console.log(data);

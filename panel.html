@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <a href="https://www.flaticon.com/free-icons/bull" title="bull icons"></a>
+    <title>Panel de operaciones</title>
+</head>
+<body style="background-color: rgb(56, 56, 56)">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark  justify-content-center ">
+        <div class="container justify-content-center">
+            <a class="navbar-brand" href="#">
+                <img src="img/hannya.png" alt="" >
+            </a>
+
+
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav ">
+                    <li class="nav-item"><a class="nav-link" href="#beginning" data-bs-toggle="modal" data-bs-target="#startModalR">Registrar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#startModal" >Buscar </a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- END NAVBAR -->
+    <!-- Table of list games -->
+    <div class="container mt-5">
+        <div class="row"> 
+     <table class="table table-dark table-striped">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Total</th>
+                <th>Price</th>
+                <th>Category</th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody class="tbody" id="tbody">
+          
+        </tbody>
+     </table>
+     </div>
+    </div>
+    <!-- End table -->
+
+    
+   <!-- MODAL REGISTER -->
+<div class="modal" id="startModalR">
+    <div class="modal-dialog">
+        <div class="modal-content bg-dark text-light">
+            <div class="modal-header">
+                <h5 class="modal-tittle">Register</h5>
+                <button class="btn btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form id="form-register" method="post" >
+                    <div class="mb-3">
+                        <label for="name-register" class="form-label">Name</label>
+                        <input type="text" class="form-control bg-dark text-light" id="name-register" placeholder="" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="description-register" class="form-label">Description</label>
+                        <textarea class="form-control bg-dark text-light" id="description-register" rows="3"></textarea>
+                      </div>
+                    <div class="mb-3">
+                        <label for="price-register" class="form-label">Price</label>
+                        <input type="name" class="form-control bg-dark text-light" id="price-register">
+                    </div>
+                    <div class="mb-3">
+                        <label for="total-register" class="form-label">Total</label>
+                        <input type="name" class="form-control bg-dark text-light" id="total-register">
+                    </div>
+                    <div class="mb-3">
+                    <select class="form-select bg-dark text-light" aria-label="Default select example" id="category-register">
+                        <option selected>Select category</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="image-register" class="form-label">Url image</label>
+                        <input type="text" class="form-control bg-dark text-light" name="" id="image-register">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END MODAL REGISTER -->
+    
+
+</body>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/panel.js"></script>
+</html>

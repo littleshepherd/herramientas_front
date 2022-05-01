@@ -29,6 +29,7 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#beginning">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#startModal" >Sign in</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#startModalR" >Sign up</a></li>
                     <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">About us</a></li>
                     <li class="nav-item"><a class="nav-link" href="#"data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@fat">Contact</a></li>
                 </ul>
@@ -70,7 +71,43 @@
         </div>
     </div>
     <!-- END MODAL LOGIN -->
-
+<!-- MODAL REGISTER -->
+<div class="modal" id="startModalR">
+    <div class="modal-dialog">
+        <div class="modal-content bg-dark text-light">
+            <div class="modal-header">
+                <h5 class="modal-tittle">Sign up</h5>
+                <button class="btn btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form id="form-register" method="post" >
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Full name</label>
+                        <input type="text" class="form-control" id="name-register" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="email-register" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password-register">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END MODAL REGISTER -->
     <!-- MODAL CONTACT -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -97,7 +134,7 @@
             </div>
           </div>
         </div>
-      </div>
+    </div>
     <!-- END MODAL CONTACT -->
 
     <!-- MODAL ABOUT US -->
