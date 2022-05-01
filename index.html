@@ -32,7 +32,7 @@
                     <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#startModal" >Sign in</a></li>
                     <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#startModalR" >Sign up</a></li>
                     <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">About us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@fat">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"data-bs-toggle="modal" data-bs-target="#startContactModal" data-bs-whatever="@fat">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -118,14 +118,22 @@
               <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <form>
+              <form id="form-contact">
                 <div class="mb-3">
-                  <label for="recipient-name" class="col-form-label">Recipient:</label>
-                  <input type="text" class="form-control" id="recipient-name">
+                  <label for="contact-name" class="col-form-label">Name</label>
+                  <input type="text" class="form-control" id="contact-name">
                 </div>
                 <div class="mb-3">
-                  <label for="message-text" class="col-form-label">Message:</label>
-                  <textarea class="form-control" id="message-text"></textarea>
+                    <label for="contact-email" class="col-form-label">Email</label>
+                    <input type="text" class="form-control" id="contact-email" >
+                  </div>
+                  <div class="mb-3">
+                    <label for="contact-phone" class="col-form-label">Phone</label>
+                    <input type="number" class="form-control" id="contact-phone">
+                  </div>
+                <div class="mb-3">
+                  <label for="contact-message" class="col-form-label">Message</label>
+                  <textarea class="form-control" id="contact-message" name="contact-message"></textarea>
                 </div>
               </form>
             </div>
@@ -264,6 +272,8 @@
     <script src="js/bootstrap.min.js"></script>
 </body>
 <script src="js/main.js"></script>
-<script src="js/login.js">win</script>
+<script src="js/login.js"></script>
 
 </html>
+
+htm
