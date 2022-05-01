@@ -2,7 +2,7 @@ const form = document.getElementById('form-login');
 window.onload = ()=>{
 // login
 const login = async (jsonSend) => {
-    const response = await fetch('http://projectherramientas.herokuapp.com/project_herramientas/login', {
+    const response = await fetch('https://projectherramientas.herokuapp.com/project_herramientas/login', {
         method: 'POST',
         headers: { 'content-type': 'application/json'},
         body: JSON.stringify(jsonSend)
@@ -29,7 +29,7 @@ form.onsubmit= (e)=>{
 
 // register
 const register = async (jsonSend) => {
-    const response = await fetch('http://projectherramientas.herokuapp.com/project_herramientas/register', {
+    const response = await fetch('https://projectherramientas.herokuapp.com/project_herramientas/register', {
         method: 'POST',
         headers: { 'content-type': 'application/json'},
         body: JSON.stringify(jsonSend)

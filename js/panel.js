@@ -1,7 +1,7 @@
 let games= [];
 const table  = document.getElementById('tbody');
 const request = async () => {
-    const response = await fetch('http://projectherramientas.herokuapp.com/project_herramientas/games');
+    const response = await fetch('https://projectherramientas.herokuapp.com/project_herramientas/games');
 
     const data  = await response.json();
     console.log(data);
@@ -68,7 +68,7 @@ const render = async ()=> {
  
 
  const registerGame = async (jsonSend) => {
-    const response = await fetch('http://projectherramientas.herokuapp.com/project_herramientas/games', {
+    const response = await fetch('https://projectherramientas.herokuapp.com/project_herramientas/games', {
         method: 'POST',
         headers: { 'content-type': 'application/json'},
         body: JSON.stringify(jsonSend)
